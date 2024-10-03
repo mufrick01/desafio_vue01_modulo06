@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="body">
+    <CarnetComponent
+      RUN="12.345.678-9"
+      apellidos="Pérez González"
+      nombres="Juan Andrés"
+      nacionalidad="Chilena"
+      sexo="Masculino"
+      fechaNacimiento="1990-05-12"
+      fechaEmision="2022-10-01"
+      fechaVencimiento="2032-10-01"
+      numeroDocumento="AB123456789"
+    />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CarnetComponent from './components/CarnetComponent.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CarnetComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        font-size: 10px;
+        font-family: sans-serif;
+      }
 </style>
